@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <!-- todo this is the parent div -->
+      <div class="headerParent">
+        <div class="child1">
+          <h1 class="link">Abdullah</h1>
+        </div>
+        <div class="child2">
+          <a class="link" href="">Residence</a>
+          <a class="link" href="">Our Value</a>
+          <a class="link" href="">Contact Us</a>
+          <a class="link" href="">Get Started</a>
+
+          <button>Contact</button>
+        </div>
+        <div class="burgerBtn" onclick="burgerbuttonClick()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div id="data" class="navbardropdown">
+        <a href="">Residence</a>
+        <a href="">Our Value</a>
+        <a href="">Contact Us</a>
+        <a href="">Get Started</a>
+
+        <button>Contact</button>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    function burgerbuttonClick() {
+      let sidebar = document.getElementById("data");
+      if (sidebar.style.display === "flex") {
+        sidebar.style.display = "none";
+      } else {
+        sidebar.style.display = "flex";
+      }
+    }
+  </script>
+</html>
